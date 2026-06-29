@@ -1,0 +1,213 @@
+.hero{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+}
+
+.hero .hero-image{
+    position: relative;
+    border-radius: 20px;
+}
+.hero .hero-image img{
+    width: 100%;
+    display: block;
+    max-height: 70vh;
+    object-fit: cover;
+    border-radius: 20px;    
+}
+.hero .hero-image::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(0.1px);
+    -webkit-backdrop-filter: blur(0.1px);
+    pointer-events: none;
+}
+.hero .hero-nav{
+    position: absolute;
+    top: 5%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    color: #FAFBFC;
+    right: 0;
+    left: 0;
+    padding: 0 40px;
+    
+}
+.hero .hero-nav .hero-nav-left{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.hero .hero-nav .hero-nav-left .hero-nav-left-item{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+}
+.hero .hero-nav .hero-nav-left .hero-nav-left-item img{
+    width: 20px;
+    height: 20px;
+}
+.hero .hero-nav .hero-nav-logo img{
+    width: 100px;
+}
+.hero .hero-nav .hero-nav-right{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.hero .hero-nav .hero-nav-right .login{
+    padding: 0 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #FFFFFF;
+
+}
+
+.hero .hero-nav .hero-nav-right .register{
+    padding: 0 10px;
+    background: #FFFFFF;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+}
+
+.hero .hero-nav .hero-nav-right .register:hover{
+    cursor: pointer;
+}
+.hero .hero-text{
+    color: #FFFFFF;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;  
+}
+
+.hero .hero-bottom{
+    transform: translateY(-100px);
+    background-color: #FFFFFF;
+    width: 80%;
+    height: 100%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
+    
+}
+
+.hero .hero-bottom .hero-bottom-top{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.hero .hero-bottom .hero-bottom-top .hero-bottom-top-flights{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.hero .hero-bottom .hero-bottom-top .hero-bottom-top-flights .hero-bottom-top-flights-top{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+    border-right: 1px solid #000000;
+    padding: 0 10px;
+}
+.hero .hero-bottom .hero-bottom-top .hero-bottom-top-flights .hero-bottom-top-flights-divider{
+    border: 3px solid #8DD3BB;
+}
+.hero .hero-bottom .hero-bottom-top .hero-bottom-top-flights img{
+    width: 20px;
+    height: 20px;
+}
+.hero .hero-bottom .hero-bottom-top .hero-bottom-top-stays{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.hero .hero-bottom .hero-bottom-top .hero-bottom-top-stays .hero-bottom-top-stays-top{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+    padding: 0 10px;
+}
+.hero .hero-bottom .hero-bottom-top .hero-bottom-top-stays .hero-bottom-top-stays-divider{
+    border: 3px solid #8DD3BB;
+    display: none;
+}
+.hero .hero-bottom .hero-bottom-top .hero-bottom-top-stays img{
+    width: 20px;
+    height: 20px;
+}
+.hero .hero-bottom .hero-bottom-mid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.hero .hero-bottom .hero-bottom-mid .hero-bottom-mid-class{
+    display: flex;
+    flex-direction: column;
+}
+.hero .hero-bottom .hero-bottom-mid .hero-bottom-mid-class input{
+    padding: 10px;
+    border: 1px solid #000000;
+    outline: 0;
+}
+
+.hero .hero-bottom .hero-bottom-mid .hero-bottom-mid-class select{
+    padding: 10px;
+    border: 1px solid #000000;
+    outline: 0;
+}
+.hero .hero-bottom .hero-bottom-mid .hero-bottom-mid-class label{
+   position: relative;
+   top: 10px;
+   left: 10px;
+   background-color: #FFFFFF;
+   width: fit-content;
+}
+.hero .hero-bottom .hero-bottom-mid .hero-bottom-mid-class img{
+    position: relative;
+    top: -42%;
+    left: 83%;
+    width: 60px;
+}
+.hero .hero-bottom .hero-bottom-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-self: flex-end;
+    align-items: center;
+}
+
+.hero .hero-bottom .hero-bottom-bottom .hero-bottom-bottom-flights button{
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    background: #8DD3BB;
+}
