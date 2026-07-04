@@ -1,0 +1,437 @@
+.login{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    padding: 50px;
+    overflow: hidden;
+    justify-self: center;
+}
+.login .login-left{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.login .login-left .login-left-logo img{
+    width: 150px;
+}
+.login .login-left .login-left-header{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.login .login-left .login-left-form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login .login-left .login-left-form .login-form-class{
+    display: flex;
+    flex-direction: column;
+}
+.login .login-left .login-left-form .login-form-class label{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: #FAFBFC;
+    width: fit-content;
+}
+.login .login-left .login-left-form .login-form-class input{
+    padding: 20px;
+    border: 1px solid #000000;
+    outline: 0;
+    border-radius: 5px;
+}
+.login .login-left .login-left-form .login-form-checkbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.login .login-left .login-left-form .login-form-checkbox label{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.login .login-left .login-left-form .login-form-checkbox input{
+    border: 1px solid #000000;
+    width: 20px;
+    outline: 0;
+}
+
+.login .login-left .login-left-form .login-form-checkbox span{
+    color: #FF3131;
+}
+.login .login-left .login-left-form .login-form-btn{
+    margin-top: 25px;
+}
+.login .login-left .login-left-form .login-form-btn button{
+    width: 100%;
+    padding: 20px;
+    outline: 0;
+    border: 0;
+    background-color: #8DD3BB;
+}
+.login .login-left .login-left-form .login-form-link{
+    align-self: center;
+    margin-top: 12px;
+}
+
+.login .login-left .login-left-form .login-form-link span{
+    color: #FF3131;
+}
+
+
+.login .login-left .login-left-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.login .login-left .login-left-bottom .login-left-bottom-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+.login .login-left .login-left-bottom .login-left-bottom-top span{
+    border: 0.5px solid #000000;
+    width:30%;
+    height: 0.5px;
+    opacity: 0.3;
+}
+.login .login-left .login-left-bottom .login-left-bottom-top p{
+    font-weight: 100;
+    opacity: 0.5;
+}
+
+.login .login-left .login-left-bottom .login-left-bottom-mid{
+    display: grid;
+    width: 93%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+.login .login-left .login-left-bottom .login-left-bottom-mid .login-left-bottom-mid-img{
+    border: 1px solid #8DD3BB;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.login .login-left .login-left-bottom .login-left-bottom-mid img{
+    width: 20px;
+    height: 20px;
+}
+
+.login .login-right{
+    position: relative;
+    height: 650px;
+}
+.login .login-right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.login .login-right .login-right-class{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login .login-right .login-right-class .login-right-class-item{
+    width: 15px;
+    height: 15px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+}
+
+
+.register{
+    width: 80%;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    overflow: hidden;
+    justify-self: center;
+    align-items: center;
+    
+}
+.register .register-right{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.register .register-right img{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.register .register-right .register-right-class{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+.register .register-right .register-right-class .register-right-class-item{
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+}
+
+.register .register-left{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.register .register-left .register-left-logo img{
+    width: 150px;
+}
+
+.register .register-left .register-left-header{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.register .register-left .register-left-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+.register .register-left .register-left-form form .register-form-class-small{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+}
+.register .register-left .register-left-form form .register-form-class-small input{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #000000;
+
+}
+.register .register-left .register-left-form form .register-form-class-small .register-form-class-small-item{
+    display: flex;
+    flex-direction: column;
+}
+.register .register-left .register-left-form form .register-form-class-small .register-form-class-small-item label{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: fit-content;
+    background-color: #FAFBFC;
+}
+.register .register-left .register-left-form form .register-form-class{
+    display: flex;
+    flex-direction: column;
+}
+.register .register-left .register-left-form form .register-form-class label{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: #FAFBFC;
+    width: fit-content;
+}
+.register .register-left .register-left-form form .register-form-class input{
+    padding: 10px;
+    border: 1px solid #000000;
+    outline: 0;
+}
+.register .register-left .register-left-form form .register-form-check{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.register .register-left .register-left-form form .register-form-check span{
+    color: #FF3131;
+}
+.register .register-left .register-left-form form .register-form-btn{
+    margin-top: 24px;
+}
+.register .register-left .register-left-form form .register-form-btn button{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    background-color: #8DD3BB;
+}
+.register .register-left .register-left-form form .register-form-link {
+    text-align: center;
+}
+.register .register-left .register-left-form form .register-form-link span{
+    color: #FF3131;
+}
+
+.register .register-left .register-left-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.register .register-left .register-left-bottom .register-left-bottom-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+.register .register-left .register-left-bottom .register-left-bottom-top span{
+    border: 0.5px solid #000000;
+    width:30%;
+    height: 0.5px;
+    opacity: 0.3;
+}
+.register .register-left .register-left-bottom .register-left-bottom-mid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    width: 95%;
+    align-self: center;
+}
+.register .register-left .register-left-bottom .register-left-bottom-mid .register-left-bottom-mid-img{
+    border: 1px solid #8DD3BB;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.register-left-bottom-mid-img img{
+    width: 20px;
+    height: 20px;
+}
+
+.forgot{
+    width: 80%;
+    padding: 50px;
+    justify-self: center;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+.forgot .forgot-left{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.forgot .forgot-left .forgot-left-top img{
+    width: 150px;
+}
+.forgot .forgot-left .forgot-left-mid{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.forgot .forgot-left .forgot-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+.forgot .forgot-left .forgot-form form .forgot-form-class{
+    display: flex;
+    flex-direction: column;
+}
+.forgot .forgot-left .forgot-form form .forgot-form-class label{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: #FAFBFC;
+    width: fit-content;
+}
+
+.forgot .forgot-left .forgot-form form .forgot-form-class input{
+    padding: 20px;
+    outline: 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.forgot .forgot-left .forgot-form form .forgot-form-btn button{
+    padding: 10px;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    background-color: #8DD3BB;
+    border-radius: 5px;
+
+}
+.forgot .forgot-left .forgot-left-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.forgot .forgot-left .forgot-left-bottom .forgot-left-bottom-top{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+}
+.forgot .forgot-left .forgot-left-bottom .forgot-left-bottom-top span{
+    width: 30%;
+    height: 1px;
+    background-color: #000000;
+}
+.forgot .forgot-left .forgot-left-bottom .forgot-left-bottom-class{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+    align-items: center;
+}
+.forgot .forgot-left .forgot-left-bottom .forgot-left-bottom-class .forgot-left-bottom-class-item{
+    border: 1px solid #8DD3BB;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+}
+.forgot .forgot-left .forgot-left-bottom .forgot-left-bottom-class .forgot-left-bottom-class-item img{
+    width: 20px;
+    height: 20px;
+}
+.forgot .forgot-right{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.forgot .forgot-right img{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.forgot .forgot-right .forgot-right-class{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.forgot .forgot-right .forgot-right-class .forgot-right-class-item{
+    background-color: #FAFBFC;
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;  
+}

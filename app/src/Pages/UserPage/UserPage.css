@@ -1,0 +1,228 @@
+.users{
+    width: 80%;
+    justify-self: center;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+}
+.users .users-top{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+.users .users-top .users-hero{
+    display: inline-block;
+}
+.users .users-top .users-hero img{
+    width: 100%;
+    max-height:300px ;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    
+}
+.users .users-cover{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    width: fit-content;
+    padding: 10px;
+    transform: translate(-5%, -50%);
+}
+.users .users-cover button{
+    outline: 0;
+    border: 0;
+    padding: 10px 30px;
+    width: 100%;
+    background: #8DD3BB;
+    border-radius: 5px;
+}
+.users .users-cover button img{
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    text-align: center;
+}
+.users .user-avatar{
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+    text-align: center;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.users .user-avatar .users-avatar-top img{
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    object-fit: cover;
+    border: 3px solid salmon;
+}
+.users .user-avatar  .user-avatar-edit{
+    position: relative;
+    top: -40px;
+    left: 115px;
+    background: salmon;
+    width: fit-content;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.users .user-avatar  .user-avatar-edit img{
+    width: 15px;
+    height: 15px;
+    padding: 1px;
+}
+.users .users-mid{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.users .users-mid .users-mid-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(18,18,18,0.3);
+    border-radius: 15px;
+}
+.users .users-mid .users-mid-header .users-mid-header-item{
+    border-right: 1px solid;
+}
+.users .users-mid .users-mid-header .users-mid-header-item h3{
+    padding:  20px;
+
+}
+.users .users-mid .users-mid-header .users-mid-header-item .users-mid-header-item-divider{
+    background-color: #8DD3BB;
+    width: 40%;
+    height: 5px;
+    position: relative;
+    left: 20px;
+}
+.users .users-mid .users-mid-class{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px 0;
+    
+}
+.users .users-mid .user-mid-class-account{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(18,18,18,0.3);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(18,18,18,0.1);
+}
+.users .users-mid .user-mid-class-account .user-mid-class-account-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+}
+.users .users-mid .user-mid-class-account .user-mid-class-account-item .user-mid-class-account-item-left{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.users .users-mid .user-mid-class-account .user-mid-class-account-item .user-mid-class-account-item-left h5{
+    font-weight: 300;
+}
+.users .users-mid .user-mid-class-account .user-mid-class-account-item .user-mid-class-account-item-left h3{
+    font-weight: 600;
+}
+
+.users .users-mid .user-mid-class-account .user-mid-class-account-item .user-mid-class-account-item-right{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.users .users-mid .user-mid-class-account .user-mid-class-account-item .user-mid-class-account-item-right button{
+    padding: 5px 15px;
+    background: transparent;
+    outline: 0;
+    border: 2px solid #8DD3BB;
+    border-radius: 5px;
+}
+.users .users-mid .user-mid-class-account .user-mid-class-account-item .user-mid-class-account-item-right button img{
+    width: 15px;
+    height: 15px;
+}
+.users .users-mid .user-mid-class-history{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+.users .users-mid .user-mid-class-history .user-mid-class-history-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(18,18,18,0.3);
+    border-radius: 10px;
+}
+.users .users-mid .user-mid-class-history .user-mid-class-history-top .user-mid-class-history-top-left{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.users .users-mid .user-mid-class-history .user-mid-class-history-top .user-mid-class-history-top-left .user-mid-class-history-top-left-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    padding:  10px;
+}
+.users .users-mid .user-mid-class-history .user-mid-class-history-top .user-mid-class-history-top-left .user-mid-class-history-top-left-top img{
+    width: 20px;
+    height: 20px;
+}
+.users .users-mid .user-mid-class-history .user-mid-class-history-top .user-mid-class-history-top-left  .user-mid-class-history-top-left-divider{
+    background-color: #8DD3BB;
+    width: 100%;
+    height: 5px;
+}
+.users .users-mid .user-mid-class-history .user-mid-class-history-top .user-mid-class-history-top-right .user-mid-class-history-top-right-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    padding:  10px;
+}
+.users .users-mid .user-mid-class-history .user-mid-class-history-top .user-mid-class-history-top-right{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.users .users-mid .user-mid-class-history .user-mid-class-history-top .user-mid-class-history-top-right .user-mid-class-history-top-right-top img{
+    width: 20px;
+    height: 20px;
+}
+
+.users .users-mid .user-mid-class-history .user-mid-class-history-top .user-mid-class-history-top-right .user-mid-class-history-top-right-divider{
+    background-color: #8DD3BB;
+    width: 100%;
+    height: 5px;
+}

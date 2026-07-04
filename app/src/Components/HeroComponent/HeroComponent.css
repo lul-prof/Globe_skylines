@@ -63,7 +63,7 @@
 .hero .hero-nav .hero-nav-right{
     display: flex;
     flex-direction: row;
-    gap: 6px;
+    gap: 3px;
 }
 
 .hero .hero-nav .hero-nav-right .login{
@@ -74,13 +74,13 @@
     color: #FFFFFF;
 
 }
-
 .hero .hero-nav .hero-nav-right .register{
     padding: 0 10px;
     background: #FFFFFF;
     border: 0;
     outline: 0;
     border-radius: 10px;
+    
 }
 
 .hero .hero-nav .hero-nav-right .register:hover{

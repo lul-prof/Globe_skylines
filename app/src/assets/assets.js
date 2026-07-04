@@ -30,6 +30,21 @@ import mail from './mail.png'
 import trailingIcon from './trailing-icon.png'
 import paperPlane from './PaperPlane.png'
 import addIcon from './add.png'
+import facebook2 from './facebook2.png'
+import apple from  './apple-logo.png'
+import logoBlack from './LogoBlack.png'
+import auth1 from './auth1.jpg'
+import auth2 from './auth2.jpg'
+import back from './Vector.png'
+import heartIcon from './heart.png'
+import userIcon from './user.jpg'
+import userHero from './user-hero.jpg'
+import emiratesImage from './emirates.png'
+import editIcon from './pencil.png'
+import uploadIcon from './cloud-computing.png'
+import edit2 from './editing.png'
+import add2 from './add2.png'
+
 
 export const assets={
     heroImage,
@@ -55,7 +70,21 @@ export const assets={
     mail,
     trailingIcon,
     paperPlane,
-    addIcon
+    addIcon,
+    facebook2,
+    apple,
+    logoBlack,
+    auth1,
+    auth2,
+    back,
+    heartIcon,
+    userIcon,
+    userHero,
+    emiratesImage,
+    editIcon,
+    uploadIcon,
+    edit2,
+    add2
 }
 
 export const trips=[
@@ -150,3 +179,9 @@ export const reviews=[
         "org":"AfricaSpiksNow - Kenya"
     }
 ]
+
+export const loginImages=[
+    sydney,
+    auth1,
+    auth2
+]   

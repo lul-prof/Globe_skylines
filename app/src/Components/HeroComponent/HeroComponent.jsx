@@ -1,8 +1,10 @@
 import React from 'react'
 import './HeroComponent.css'
 import {assets} from '../../assets/assets'
+import { useNavigate } from 'react-router-dom'
 
 const HeroComponent = () => {
+  const navigate=useNavigate();
   return (
     <>
     <div className="hero">
@@ -26,8 +28,8 @@ const HeroComponent = () => {
           <img src={assets.logoImage_White} alt="logo" />
         </div>
         <div className="hero-nav-right">
-            <button className='login'>Login</button>
-            <button className='register'>Sign Up</button>
+            <button onClick={()=>(navigate('/login'))} className='login'>Login</button>
+            <button onClick={()=>(navigate('/login'))} className='register'>Sign Up</button>
         </div>
       </div>
       {/*---------------------*/}
