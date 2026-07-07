@@ -1,0 +1,118 @@
+.ch{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+.ch .ch-top{
+    position: relative;
+    display: block;
+}
+.ch .ch-top img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: flex;
+}
+.ch .ch-top .ch-top-text{
+    position:absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.ch .ch-top .ch-top-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(0.1px);
+    -webkit-backdrop-filter: blur(0.1px);
+    pointer-events: none;
+}
+.ch .ch-mid{
+    background: rgba(255,255,255,1);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.ch .ch-mid .ch-mid-header{
+    align-self: flex-start;
+}
+
+.ch .ch-mid .ch-mid-class form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+}
+.ch .ch-mid .ch-mid-class form .ch-form-class{
+    display: flex;
+    flex-direction: column;
+
+}
+.ch .ch-mid .ch-mid-class form .ch-form-class input{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+.ch .ch-mid .ch-mid-class form .ch-form-class label{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: #FFFFFF;
+    width: fit-content;
+}
+.ch .ch-mid .ch-mid-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-self: flex-end;
+}
+.ch .ch-mid .ch-mid-bottom .ch-mid-bottom-right button{
+    padding: 5px 10px;
+    background-color: #8DD3BB;
+    outline: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.ch .ch-mid .ch-mid-bottom .ch-mid-bottom-right button img{
+    width: 20px;
+    height: 20px;
+}
+.ch .ch-mid .ch-mid-bottom .ch-mid-bottom-left button{
+    padding: 5px 10px;
+    background:transparent;
+    outline: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.ch .ch-mid .ch-mid-bottom .ch-mid-bottom-left button img{
+    width: 20px;
+    height: 20px;
+}

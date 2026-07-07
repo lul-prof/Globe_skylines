@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './HeroComponent.css'
 import {assets} from '../../assets/assets'
 import { useNavigate } from 'react-router-dom'
+import { ManagementContext } from '../../Context/ManagementContext'
 
 const HeroComponent = () => {
   const navigate=useNavigate();
+  const {setLoggedIn}=useContext(ManagementContext);
   return (
     <>
     <div className="hero">
@@ -15,11 +17,11 @@ const HeroComponent = () => {
       {/*-------------------*/}
       <div className="hero-nav">
         <div className="hero-nav-left">
-          <div className="hero-nav-left-item">
+          <div onClick={()=>(navigate('/flights'),setLoggedIn(true))} className="hero-nav-left-item">
             <img src={assets.airplaneIcon} alt="image" />
             <h3>Find Flights</h3>
           </div>
-          <div className="hero-nav-left-item">
+          <div onClick={()=>(navigate('/hotels'),setLoggedIn(true))} className="hero-nav-left-item">
             <img src={assets.bedIcon} alt="image" />
             <h3>Find Stays</h3>
           </div>

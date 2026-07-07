@@ -7,6 +7,8 @@ import LoginPage from './Pages/LoginPage/LoginPage'
 import { useContext } from 'react'
 import { ManagementContext } from './Context/ManagementContext'
 import UserPage from './Pages/UserPage/UserPage'
+import HotelsPage from './Pages/HotelsPage/HotelsPage'
+import FlightsPage from './Pages/FlightsPage/FlightsPage'
 
 const App = () => {
   const {loggedIn}=useContext(ManagementContext);
@@ -26,6 +28,8 @@ const App = () => {
        </Route>
        <Route path='/login' element={<LoginPage/>}></Route>
        <Route path='/user' element={<UserPage/>}></Route>
+       <Route path='/hotels' element={<HotelsPage/>}></Route>
+       <Route path='/flights' element={<FlightsPage/>}></Route>
       </Routes>
     {loggedIn? <FooterComponent/>:<></>}
     </BrowserRouter>

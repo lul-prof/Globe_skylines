@@ -1,0 +1,212 @@
+.flights{
+    width: 100%;
+    padding: 50px 0;
+    transform: translateY(150px);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow: hidden;
+}
+.flights .flights-top{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.flights .flights-top .flights-top-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    width: 80%;
+    align-self: center;
+}
+.flights .flights-top .flights-top-header .flights-top-header-left{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.flights .flights-top .flights-top-header .flights-top-header-right button{
+    padding:5px 10px;
+    outline: 0;
+    background: transparent;
+    border: 1px solid #8DD3BB;
+}
+.flights .flights-top .flights-top-body img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flights .flights-mid{
+    width: 80%;
+    align-self: center;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.flights .flights-mid .flights-mid-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+}
+.flights .flights-mid .flights-mid-header .flights-mid-header-left{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.flights .flights-mid .flights-mid-header .flights-mid-header-right button{
+    padding: 5px 10px;
+    outline: 0;
+    background: transparent;
+    border: 1px solid #8DD3BB;
+    border-radius: 5px;
+}
+.flights .flights-mid .flights-mid-class{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    
+}
+.flights .flights-mid .flights-mid-class .flights-mid-place{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.flights .flights-mid .flights-mid-class .flights-mid-place .flights-mid-place-img{
+    display: inline-block;
+}
+.flights .flights-mid .flights-mid-class .flights-mid-place .flights-mid-place-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(0.1px);
+    -webkit-backdrop-filter: blur(0.1px);
+    pointer-events: none;
+    border-radius: 10px;
+}
+.flights .flights-mid .flights-mid-class .flights-mid-place .flights-mid-place-img img{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+}
+.flights .flights-mid .flights-mid-class .flights-mid-place .flights-mid-place-details{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-between;
+}
+.flights .flights-mid .flights-mid-class .flights-mid-place .flights-mid-place-details .flights-mid-place-details-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 48px;
+    color: #FFFFFF;
+}
+.flights .flights-mid .flights-mid-class .flights-mid-place .flights-mid-place-details .flights-mid-place-details-top .flights-mid-place-details-top-left{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.flights .flights-mid .flights-mid-class .flights-mid-place .flights-mid-place-details .flights-mid-place-details-top .flights-mid-place-details-top-right{
+    align-self: flex-end;
+}
+.flights .flights-mid .flights-mid-class .flights-mid-place .flights-mid-place-details .flights-mid-place-details-btn button{
+    width: 100%;
+    padding: 5px 10px;
+    outline: 0;
+    border: 0;
+    background-color: #8DD3BB;
+    border-radius: 5px; 
+}
+.flights .flights-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 80%;
+    align-self: center;
+    padding-bottom: 150px;
+}
+.flights .flights-bottom .flights-bottom-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+}
+.flights .flights-bottom .flights-bottom-header .flights-bottom-header-left{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.flights .flights-bottom .flights-bottom-header .flights-bottom-header-right button{
+    padding: 5px 10px;
+    outline: 0;
+    background: transparent;
+    border: 1px solid #8DD3BB;
+    border-radius: 5px;
+}
+.flights .flights-bottom .flights-bottom-class{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+.flights .flights-bottom .flights-bottom-class .flights-bottom-class-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #8DD3BB;
+    padding: 20px;
+    border-radius: 10px;
+}
+.flights .flights-bottom .flights-bottom-class .flights-bottom-class-left .flights-bottom-class-left-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.flights .flights-bottom .flights-bottom-class .flights-bottom-class-left .flights-bottom-class-left-top .flights-bottom-class-left-top-right{
+    background-color: #FFFFFF;
+    padding: 5px;
+    height: fit-content;
+    border-radius: 10px;
+}
+.flights .flights-bottom .flights-bottom-class .flights-bottom-class-left .flights-bottom-class-left-mid p{
+    font-size: 14px;
+}
+.flights .flights-bottom .flights-bottom-class .flights-bottom-class-left-btn button{
+    padding: 5px 10px;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    background-color: #FAFBFC;
+    border-radius: 5px;
+
+}
+.flights .flights-bottom .flights-bottom-class .flights-bottom-class-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.flights .flights-bottom .flights-bottom-class .flights-bottom-class-right .flights-bottom-class-right-item{
+    border: 2px solid #8DD3BB;
+    border-radius: 10px;
+}
+.flights .flights-bottom .flights-bottom-class .flights-bottom-class-right .flights-bottom-class-right-item img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: flex;
+}

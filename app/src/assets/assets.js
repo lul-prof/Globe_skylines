@@ -44,7 +44,24 @@ import editIcon from './pencil.png'
 import uploadIcon from './cloud-computing.png'
 import edit2 from './editing.png'
 import add2 from './add2.png'
-
+import visaImage from './visa.png'
+import userImage2 from './userImage2.png'
+import seatIcon from './seat.png'
+import gateIcon from './checkpoint.png'
+import timeIcon from './clock.png'
+import calenderIcon from './calendar.png'
+import rightArrow from './arrow.png'
+import addGreen from './add3.png'
+import deleteIcon from './bin.png'
+import hotelHero from './hotelHero.jpg'
+import melbourne from './melbourne.jpg'
+import london2 from './london2.jpg'
+import columbia from './colombia.jpg'
+import hotelFlex1 from './hotelsFlex1.jpg'
+import hotelFlex2 from './hotelsFlex2.jpg'
+import hotelFlex3 from './hotelsFlex3.jpg'
+import hotelFlex4 from './hotelsFlex4.jpg'
+import flightsFrame from './flightsLocations.png'
 
 export const assets={
     heroImage,
@@ -84,7 +101,25 @@ export const assets={
     editIcon,
     uploadIcon,
     edit2,
-    add2
+    add2,
+    visaImage,
+    userImage2,
+    seatIcon,
+    gateIcon,
+    timeIcon,
+    calenderIcon,
+    rightArrow,
+    addGreen,
+    deleteIcon,
+    hotelHero,
+    melbourne,
+    london2,
+    columbia,
+    hotelFlex1,
+    hotelFlex2,
+    hotelFlex3,
+    hotelFlex4,
+    flightsFrame
 }
 
 export const trips=[
@@ -185,3 +220,34 @@ export const loginImages=[
     auth1,
     auth2
 ]   
+
+export const hotelsFlex=[
+    {
+        "_id":"h001",
+        "hotels":"Melbourne",
+        "desc":"An amazing journey",
+        "price":"$700",
+        "image":melbourne
+    },
+    {
+        "_id":"h002",
+        "hotels":"Paris",
+        "desc":"A Paris Adventure",
+        "price":"$600",
+        "image":paris
+    },
+    {
+        "_id":"h003",
+        "hotels":"London",
+        "desc":"London adventure",
+        "price":"$350",
+        "image":london2
+    },
+    {
+        "_id":"h004",
+        "hotels":"Columbia",
+        "desc":"Amazing Streets",
+        "price":"$700",
+        "image":columbia
+    },
+]
