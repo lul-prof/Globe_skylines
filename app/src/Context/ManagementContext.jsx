@@ -6,7 +6,7 @@ export const ManagementContext=createContext();
 
 const ManagementContextProvider=(props)=>{
 
-    const [loggedIn,setLoggedIn]=useState(false);
+    const [loggedIn,setLoggedIn]=useState(true);
     const [stays,setStays]=useState(true);
 
     const value={

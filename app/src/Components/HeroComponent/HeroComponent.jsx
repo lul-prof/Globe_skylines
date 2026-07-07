@@ -30,8 +30,8 @@ const HeroComponent = () => {
           <img src={assets.logoImage_White} alt="logo" />
         </div>
         <div className="hero-nav-right">
-            <button onClick={()=>(navigate('/login'))} className='login'>Login</button>
-            <button onClick={()=>(navigate('/login'))} className='register'>Sign Up</button>
+            <button onClick={()=>(navigate('/login'),setLoggedIn(false))} className='login'>Login</button>
+            <button onClick={()=>(navigate('/login'),setLoggedIn(false))} className='register'>Sign Up</button>
         </div>
       </div>
       {/*---------------------*/}
